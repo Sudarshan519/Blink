@@ -1,7 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:liveliness/custom_paint.dart';
+import 'package:image_picker/image_picker.dart'; 
 import 'package:tflite/tflite.dart';
 
 void main() {
@@ -19,7 +18,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: CustomCirclePage());
+        home: const MyHomePage(
+          title: "BLINK DEMO",
+        ));
   }
 }
 
